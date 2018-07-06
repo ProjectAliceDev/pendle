@@ -1,0 +1,26 @@
+---
+
+---
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "base";
+
+.shadow {
+	text-shadow: 4px 4px 8px #333333; 
+}
+
+.angel-dark {
+	background-color: #000000;
+	color: $color-brand;
+}
+
+.angel-dark-muted {
+	color: #94804e;
+}
+
+.small {
+	font-size: 10pt;
+}
+
+.not-italics {
+    font-style: normal;
+}
