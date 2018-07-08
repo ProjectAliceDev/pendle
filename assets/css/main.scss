@@ -1,5 +1,6 @@
 ---
-
+layout: null
+sitemap: false
 ---
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "base";
@@ -23,4 +24,8 @@
 
 .not-italics {
     font-style: normal;
+}
+
+header#navigation div.p-navigation__banner div.p-navigation__logo a.p-navigation__link {
+	font-family: "Comfortaa", $font-heading-family;
 }

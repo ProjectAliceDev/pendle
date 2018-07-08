@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
+    <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <title>{{ page.title }} - {{ site.title }}</title>
 </head>
 <header id="navigation" class="p-navigation">
     <div class="p-navigation__banner">
       <div class="p-navigation__logo">
-        <a class="p-navigation__link is-selected" href="/">
-          <img class="p-navigation__image" src="assets/img/logomark.svg" alt="AliceOS">
+        <a class="p-navigation__link is-selected" href="{{ site.baseurl }}/">
+          <img class="p-navigation__image" src="{{ site.baseurl }}/assets/img/logomark.svg" alt="AliceOS">
+          beta
         </a>
       </div>
       <a href="#navigation" class="p-navigation__toggle--open" title="menu">Menu</a>
@@ -26,6 +27,9 @@
       <ul class="p-navigation__links" role="menu">
         <li class="p-navigation__link" role="menuitem">
                 <a href="#">Docs</a>
+              </li>
+              <li class="p-navigation__link" role="menuitem">
+                <a href="{{ site.baseurl }}/features/">Features</a>
               </li>
         <li class="p-navigation__link" role="menuitem">
           <a href="https://github.com/TheAngelReturns/aliceos">GitHub</a>
