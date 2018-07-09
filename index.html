@@ -1,15 +1,19 @@
+--- 
+layout: default 
+title: Home 
+permalink: / 
 ---
-layout: default
-title: Home
-permalink: /
----
-<section class="p-strip--image is-dark is-shallow" style="background-image:url('./assets/img/aliceos-hero-bg.jpg')">
+<section class="p-strip--image is-dark is-shallow" style="background-image:url('{{ site.baseurl }}/assets/img/trianglify.svg')">
     <div class="row">
         <div class="col-7">
-                <h2 class="shadow">Get AliceOS</h2>
-
-        <p class="shadow">AliceOS is an independent, open-source project that brings a virtual operating system into Doki Doki Literature Club! as a mod and to Ren'Py projects as a framework. AliceOS is also the core operating system used in Doki Doki: The Angel Returns.</p>
-        <p><a class="p-button--positive" id="stable-dl-button"></a> <a class="p-button--brand" id="insider-dl-button"></a> </p>
+            <h2 class="shadow">Get AliceOS</h2>
+            <p class="shadow">AliceOS is an independent, open-source project that brings a virtual operating system into Doki Doki Literature
+                Club! as a mod and to Ren'Py projects as a framework. AliceOS is also the core operating system used in Doki
+                Doki: The Angel Returns.</p>
+            <p>
+                <a class="p-button--positive p-link--external" id="stable-dl-button"></a>
+                <a class="p-button--brand p-link--external" id="insider-dl-button"></a>
+            </p>
         </div>
         <div class="col-5">
             <center>
@@ -18,43 +22,52 @@ permalink: /
         </div>
     </div>
 </section>
-<section class = "p-strip is-shallow">
-    <div class = "row">
-        <h2>See where AliceOS is used!</h2>
+<section class="p-strip is-shallow">
+    <div class="row">
+        <h2>Projects that use AliceOS</h2>
     </div>
-    <div class = "row">
-        <div class = "col-4">
-            <div class="p-card">
-                    <a href="https://dokidokialice.marquiskurt.net"><img src="https://dokidokialice.marquiskurt.net/assets/img/screenshot.png" width = "100%" alt="header image"></a>
-                <hr class="u-sv1">
-                <h3 class="p-card__title">
-                    <img src="https://dokidokialice.marquiskurt.net/assets/img/logomark.svg" />
-                </h3>
-                <p class="p-card__content">It's spring break! Join the Literature Club girls in an exciting one-week adventure as they visit Angelhaus Productions, the successor to Joey Drew Studios!</p>
+    <div class="row">
+        <div class="u-equal-height">
+            <div class="col-4">
+                <div class="p-card">
+                    <img src="https://dokidokialice.marquiskurt.net/assets/img/screenshot.png" width="100%" alt="header image">
+                    <hr class="u-sv1">
+                    <h3 class="p-card__title p-link--external">
+                        <a href="https://dokidokialice.marquiskurt.net">
+                            <img src="https://dokidokialice.marquiskurt.net/assets/img/logomark.svg" alt="Doki Doki: The Angel Returns" width="90%" />
+                        </a>
+                    </h3>
+                    <p class="p-card__content">It's spring break! Join the Literature Club girls in an exciting one-week adventure as they visit Angelhaus
+                        Productions, the successor to Joey Drew Studios!</p>
+                </div>
+            </div>
+            <div class="col-4">
+                {% include project-placeholder.html %}
+            </div>
+            <div class="col-4">
+                {% include project-placeholder.html %}
             </div>
         </div>
-        <!--Wait for further mods/projects-->
-        <!--<div class = "col-4">
-            <div class="p-card">
-                <img class="p-card__thumbnail" src="https://dokidokialice.marquiskurt.net/assets/img/screenshot.png" alt="header image">
-                <hr class="u-sv1">
-                <h3 class="p-card__title">Title</h3>
-                <p class="p-card__content">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-            </div>
-        </div>
-        <div class = "col-4">
-            <div class="p-card">
-                <img class="p-card__thumbnail" src="https://via.placeholder.com/200x32?text=header image" alt="header image">
-                <hr class="u-sv1">
-                <h3 class="p-card__title">Title</h3>
-                <p class="p-card__content">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-            </div>-->
+    </div>
+    </div>
+</section>
+<hr class="is-deep" />
+<section class="p-strip is-shallow">
+    <div class="row">
+        <div class="col-12">
+            <h2>Want to develop for AliceOS?</h2>
+            <p>Do you want to add your own Applet into AliceOS or want to contribute to the AliceOS project? Get started as
+                an AliceOS developer today.</p>
+            <p>
+                <a class="p-button--brand p-link--external" href="http://github.com/TheAngelReturns/aliceos">See the source code</a>
+                <a class="p-button--brand p-link--external" href="http://github.com/TheAngelReturns/aliceos-applet">Get the app template</a>
+            </p>
         </div>
     </div>
 </section>
-<script src = "assets/js/getRelease.js"></script>
+<script src="assets/js/getRelease.js"></script>
 <script>
-    $(document).ready(function(){
-    getLatestReleases();
-});
+    $(document).ready(function () {
+        getLatestReleases();
+    });
 </script>
