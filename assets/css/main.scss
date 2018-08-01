@@ -1,5 +1,6 @@
 ---
-
+layout: null
+sitemap: false
 ---
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "base";
@@ -24,3 +25,27 @@
 .not-italics {
     font-style: normal;
 }
+
+header#navigation div.p-navigation__banner div.p-navigation__logo a.p-navigation__link {
+	font-family: "Comfortaa", $font-heading-family;
+}
+
+/* Copied from Docs */
+.p-navigation__logo {
+	align-items: center;
+  }
+
+  .p-navigation__logo .p-navigation__link {
+	align-items: center;
+  }
+
+  .p-navigation__logo h4 {
+	font-size: 1.30612rem;
+	font-weight: 300;
+	margin: 0 .5rem;
+  }
+
+  .p-sidebar__banner {
+	padding-top: 24px;
+	padding-bottom: 24px;
+  }

@@ -1,15 +1,19 @@
+--- 
+layout: default 
+title: Home 
+permalink: / 
 ---
-layout: default
-title: Home
-permalink: /
----
-<section class="p-strip--image is-dark is-shallow" style="background-image:url('./assets/img/aliceos-hero-bg.jpg')">
+<section class="p-strip--image is-dark is-shallow" style="background-image:url('{{ site.baseurl }}/assets/img/trianglify.svg')">
     <div class="row">
         <div class="col-7">
-                <h2 class="shadow">Meet your new Ren'Py platform</h2>
-
-        <p class="shadow">AliceOS is an independent, open-source project that brings a virtual operating system into Doki Doki Literature Club! as a mod and to Ren'Py projects as a framework. AliceOS is also the core operating system used in Doki Doki: The Angel Returns.</p>
-        <p><a class="p-button--positive" id="stable-dl-button"></a> <a class="p-button--brand" id="insider-dl-button"></a> </p>
+            <h2 class="shadow">Get AliceOS</h2>
+            <p class="shadow">AliceOS is an independent, open-source project that brings a virtual operating system into Doki Doki Literature
+                Club! as a mod and to Ren'Py projects as a framework. AliceOS is also the core operating system used in Doki
+                Doki: The Angel Returns.</p>
+            <p>
+                <a class="p-button--positive p-link--external" id="stable-dl-button"></a>
+                <a class="p-button--brand p-link--external" id="insider-dl-button"></a>
+            </p>
         </div>
         <div class="col-5">
             <center>
@@ -18,91 +22,52 @@ permalink: /
         </div>
     </div>
 </section>
-<section>
-    <div class="p-strip is-shallow">
-        <div class = "row">
-            
-                
-            </div>
-        <div class = "row">
-                <div class="col-7">
-                    <h3>Built with Applets</h3>
-                    Applets make up the app ecosystem for AliceOS. Applets are how third-party developers add additional functionality to AliceOS and interact with users and players. Want to add a new messaging Applet to AliceOS? or maybe even a game? Applets make it possible.
-                </div>
-                <div class="col-5">
-                    <center>
-                        <div class="row">
-                                <div class="col-2">
-                                    <img src="assets/img/multimedia-audio-player.svg" alt="Audio Player">
-                                </div>
-                                <div class="col-2">
-                                    <img src="assets/img/accessories-screenshot.svg" alt="Screencap Tool">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-2">
-                                    <img src="assets/img/multimedia-photo-manager.svg" alt="Photos">
-                                </div>
-                                <div class="col-2">
-                                    <img src="assets/img/internet-chat.svg" alt="Instant Messaging">
-                                    </div>
-                            </div>
-                    </center>
-
-                </div>
-                
-            </div>
+<section class="p-strip is-shallow">
+    <div class="row">
+        <h2>Projects that use AliceOS</h2>
     </div>
-    <div class="p-strip is-shallow">
-            <div class = "row">
-                    <div class = "col-6">
-                            <img src="assets/img/aliceos-notify.png" alt="Notifications">
-                        </div>
-                    <div class="col-6">
-                        <h3>Rich notifications</h3>
-                            AliceOS comes with its own notification framework that allows developers and users to stay informed. Applets and system services alike use notifications to express ideas, display information, or even make a request. Notifications are also user-controlled, giving the user ultimate control over which notifications can be seen.
-                    </div>
+    <div class="row">
+        <div class="u-equal-height">
+            <div class="col-4">
+                <div class="p-card">
+                    <img src="https://dokidokialice.marquiskurt.net/assets/img/screenshot.png" width="100%" alt="header image">
+                    <hr class="u-sv1">
+                    <h3 class="p-card__title p-link--external">
+                        <a href="https://dokidokialice.marquiskurt.net">
+                            <img src="https://dokidokialice.marquiskurt.net/assets/img/logomark.svg" alt="Doki Doki: The Angel Returns" width="90%" />
+                        </a>
+                    </h3>
+                    <p class="p-card__content">It's spring break! Join the Literature Club girls in an exciting one-week adventure as they visit Angelhaus
+                        Productions, the successor to Joey Drew Studios!</p>
                 </div>
+            </div>
+            <div class="col-4">
+                {% include project-placeholder.html %}
+            </div>
+            <div class="col-4">
+                {% include project-placeholder.html %}
+            </div>
         </div>
-    <div class="p-strip is-shallow">
-            <div class = "row">
-                    <div class="col-6">
-                            <h3>Privacy matters</h3>
-                            <p>
-                                Privacy and security matter. That's why AliceOS comes with its own security policy, provided under the GOBFADU policy. Files have integrity protection and are not allowed to be tampered with. Furthermore, we enforce a policy to ensure that only you give the consent for an applet's control to things like notifications, file system access, and system setting changes. 
-                            </p>
-                        </div>
-                        <div class = "col-6">
-                                <img src="assets/img/aliceos-privacy.png" alt="Permission Dialog">
-                            </div>
-                </div>
-        </div>
-        <div class="p-strip is-shallow">
-                <div class = "row">
-                        <div class = "col-4">
-                                <img src="assets/img/utilities-terminal.svg" width = "75%" alt="Terminal">
-                            </div>
-                        <div class="col-8">
-                                <h3>Let's get geeky</h3>
-                                    AliceOS provides an experience similar to Linux, complete with a Terminal and a UNIX-like shell. From basic filesystem commands to package installation, AliceOS provides a unique experience to games. Applets can harness the power of the Terminal and offer additional commands and tools through its command-line interface, perfect for any character deletion (we're looking at you, Monika).
-                            </div>
-                    </div>
-                </div>
+    </div>
+    </div>
 </section>
-<section class="p-strip--image is-dark is-shallow" style="background-image:url('./assets/img/aliceos-hero-bg.jpg')">
+<hr class="is-deep" />
+<section class="p-strip is-shallow">
     <div class="row">
         <div class="col-12">
-            <h2 class="shadow">Want to develop for AliceOS?</h2>
-            <p class="shadow">Do you want to add your own Applet into AliceOS or want to contribute to the AliceOS project? Get started as an AliceOS developer today.</p>
-        <p>
-            <a class="p-button--brand" href="http://aliceos-docs.readthedocs.io/">Read the docs</a> <a class="p-button--brand" href="http://github.com/TheAngelReturns/aliceos">See the source code</a> <a class="p-button--brand" href="http://github.com/TheAngelReturns/aliceos-applet">Get the app template</a>
-        </p>
+            <h2>Want to develop for AliceOS?</h2>
+            <p>Do you want to add your own Applet into AliceOS or want to contribute to the AliceOS project? Get started as
+                an AliceOS developer today.</p>
+            <p>
+                <a class="p-button--brand p-link--external" href="http://github.com/TheAngelReturns/aliceos">See the source code</a>
+                <a class="p-button--brand p-link--external" href="http://github.com/TheAngelReturns/aliceos-applet">Get the app template</a>
+            </p>
         </div>
     </div>
 </section>
-<script src = "assets/js/getRelease.js"></script>
+<script src="assets/js/getRelease.js"></script>
 <script>
-    $(document).ready(function(){
-    getLatestReleases();
-});
+    $(document).ready(function () {
+        getLatestReleases();
+    });
 </script>
