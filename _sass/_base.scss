@@ -1,15 +1,15 @@
 // Override default Vanilla settings in your main Sass file
-$font-base-family: 	'"Open Sans", Arial, "libra sans", sans-serif';
-$font-heading-family:  	'Raleway, Arial, "libra sans", sans-serif';
+$font-base-family: 	'"Nunito", -apple-system, BlinkMacSystemFont, Helvetica, Arial, "libra sans", sans-serif';
+$font-heading-family:  	'Nunito, -apple-system, BlinkMacSystemFont, Helvetica, Arial, "libra sans", sans-serif';
 $font-monospace: '"Roboto Mono", Consolas, Monaco, Courier, monospace';
 $color-positive: #68b723;
 $color-negative: #c6262e;
-$color-brand: #d48e15;
+$color-brand: #f9c440;
 $color-navigation-background: #1a1a1a;
 
 // Import Vanilla framework
 @import 'vanilla-framework/scss/vanilla';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Roboto+Mono|Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto+Mono|Comfortaa');
 
 
 // Include all of Vanilla Framework

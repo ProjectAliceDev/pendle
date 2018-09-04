@@ -5,6 +5,10 @@ sitemap: false
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "base";
 
+h1, h2, h3 {
+	font-weight: 900;
+}
+
 .shadow {
 	text-shadow: 4px 4px 8px #333333; 
 }
