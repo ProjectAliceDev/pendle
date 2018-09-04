@@ -7,6 +7,22 @@ $color-negative: #c6262e;
 $color-brand: #f9c440;
 $color-navigation-background: #1a1a1a;
 
+.p-button, .p-button--base, .p-button--positive, .p-button--brand, .p-button--negative, .p-button--neutral {
+  //Imported from Materialize
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.p-navigation {
+  //Imported from Materialize
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.is--disabled {
+  box-shadow: None;
+}
+
 // Import Vanilla framework
 @import 'vanilla-framework/scss/vanilla';
 @import url('https://fonts.googleapis.com/css?family=Nunito|Roboto+Mono|Comfortaa');
