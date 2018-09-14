@@ -3,48 +3,77 @@ layout: default
 title: Features
 permalink: /features/
 ---
-<section class="p-strip--image is-dark is-shallow" style="background-image:url('../assets/img/trianglify.svg')">
+<style>
+    .md-app-grid {
+        font-size: 128px;
+    }
+
+    img {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    #section-hero {
+        padding-top: 152px;
+        padding-bottom: 152px;
+        background-image:url('../assets/img/sysbg.png');
+
+        /* Add a parallax effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #detail-hero {
+        max-width: 100%;
+    }
+</style>
+<section class="p-strip--image is-dark" id = "section-hero">
     <div class="row">
-        <div class="col-12">
-            <h2 class="shadow">Meet your new Ren'Py platform</h2>
-            <p class="shadow">AliceOS is an independent, open-source project that brings a virtual operating system into Doki Doki Literature Club! as a mod and to Ren'Py projects as a framework. AliceOS is also the core operating system used in Doki Doki: The Angel Returns.</p>
+        <div class="col-10">
+            <h1 class="shadow">Meet your new Ren'Py framework</h1>
+            <p class="shadow p-heading--four" id="detail-hero">
+                AliceOS brings new features and experiences to any Ren'Py project. From giving users notifications to its extensibility with Applets, AliceOS makes any visual novel more exciting and enriching for its players and developers.
+            </p>
         </div>
     </div>
 </section>
 <section>
     <div class="p-strip is-shallow">
-        <div class = "row">
-            
-                
-            </div>
-        <div class = "row">
-                <div class="col-7">
-                    <h3>Built with Applets</h3>
-                    Applets make up the app ecosystem for AliceOS. Applets are how third-party developers add additional functionality to AliceOS and interact with users and players. Want to add a new messaging Applet to AliceOS? or maybe even a game? Applets make it possible.
-                </div>
-                <div class="col-5">
-                    <center>
-                        <div class="row">
-                                <div class="col-2">
-                                    <img src="../assets/img/multimedia-audio-player.svg" alt="Audio Player">
-                                </div>
-                                <div class="col-2">
-                                    <img src="../assets/img/accessories-screenshot.svg" alt="Screencap Tool">
-                                </div>
+                <div class = "row">
+                        <div class="col-12">
+                            <center>
+                                <h2>Pick an applet. Any applet.</h2>
+                                <p>
+                                    AliceOS is extensible by nature with Applets, custom extensions and apps for the AliceOS ecosystem. Whether you're playing music, sending messages to your crush, or writing the next script, Applets make it happen.
+                                </p>
+                                </center>
                             </div>
-                            <div class="row">
-                                <div class="col-2">
-                                    <img src="../assets/img/multimedia-photo-manager.svg" alt="Photos">
-                                </div>
-                                <div class="col-2">
-                                    <img src="../assets/img/internet-chat.svg" alt="Instant Messaging">
-                                    </div>
-                            </div>
-                    </center>
-
-                </div>
-                
-            </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-3">
+                            <center>
+                                <i class = "material-icons md-app-grid">library_music</i>
+                            </center>
+                        </div>
+                        <div class = "col-3">
+                            <center>
+                                <i class = "material-icons md-app-grid">screen_share</i>
+                            </center>
+                        </div>
+                        <div class = "col-3">
+                            <center>
+                                <i class = "material-icons md-app-grid">photo_library</i>
+                            </center>
+                        </div>
+                        <div class = "col-3">
+                            <center>
+                                <i class = "material-icons md-app-grid">chat</i>
+                            </center>
+                        </div>
+                    </div>
+        
     </div>
     <div class="p-strip is-shallow">
             <div class = "row">
@@ -60,7 +89,7 @@ permalink: /features/
     <div class="p-strip is-shallow">
             <div class = "row">
                     <div class="col-6">
-                            <h3>Privacy matters</h3>
+                            <h3>You're in control</h3>
                             <p>
                                 Privacy and security matter. That's why AliceOS comes with its own security policy, provided under the GOBFADU policy. Files have integrity protection and are not allowed to be tampered with. Furthermore, we enforce a policy to ensure that only you give the consent for an applet's control to things like notifications, file system access, and system setting changes. 
                             </p>
@@ -75,13 +104,25 @@ permalink: /features/
         </div>
         <div class="p-strip is-shallow">
                 <div class = "row">
+                        <div class="col-12">
+                            <center>
+                                <h2>Unique, but familiar</h2>
+                                <p>
+                                    AliceOS provides a familiar experience across projects and games. Want something a little less vanilla? Developers can customize AliceOS to match their branding with the diverse color palette system and OEM font loading.
+                                </p>
+                                </center>
+                            </div>
+                    </div>
+                    <div class = "row">
                         <div class = "col-4">
-                                <img src="../assets/img/utilities-terminal.svg" width = "75%" alt="Terminal">
-                            </div>
-                        <div class="col-8">
-                                <h3>Let's get geeky</h3>
-                                    AliceOS provides an experience similar to Linux, complete with a Terminal and a UNIX-like shell. From basic filesystem commands to package installation, AliceOS provides a unique experience to games. Applets can harness the power of the Terminal and offer additional commands and tools through its command-line interface, perfect for any character deletion (we're looking at you, Monika).
-                            </div>
+                            <img src = "../assets/img/custom/1.png" width="100%" alt="Setup assistant"/>
+                        </div>
+                        <div class = "col-4">
+                            <img src = "../assets/img/custom/2.png" width="100%" alt="Alerts"/>
+                        </div>
+                        <div class = "col-4">
+                            <img src = "../assets/img/custom/3.png" width="100%" alt="Custom wallpapers"/>
+                        </div>
                     </div>
                 </div>
 </section>
