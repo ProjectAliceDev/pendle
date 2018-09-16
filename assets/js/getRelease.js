@@ -63,7 +63,7 @@ function getLatestReleases()
             // Check to see if the flag is set to "ready"
             else if (checkInsiderReleaseFlag == "ready") {
                 // Programatically set the href to the download link based on release version.
-                $('#insider-dl-button').attr('href', stableLink);
+                $('#insider-dl-button').attr('href', betaLink);
             }
 
             //Otherwise, spit out an error and hide the button, respectively.
