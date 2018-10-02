@@ -11,7 +11,7 @@ function getLatestReleases()
         var checkInsiderReleaseFlag = data.insider.flag;
 
         // Programatically generate the download links based off of a base URL.
-        var baseURL = "https://github.com/TheAngelReturns/aliceos/releases/tag/";
+        var baseURL = "https://github.com/ProjectAliceDev/aliceos/releases/tag/";
         var stableLink = baseURL + stableVersion;
         var betaLink = baseURL + betaVersion + "beta" + betaVersionBuild;
 
