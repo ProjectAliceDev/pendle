@@ -45,6 +45,10 @@ header#navigation div.p-navigation__banner div.p-navigation__logo a.p-navigation
 	font-family: "Comfortaa", $font-heading-family;
 }
 
+.p-navigation__frontpage {
+	background-color: rgba(26, 26, 26, 0.75);
+}
+
 /* Copied from Docs */
 .p-navigation__logo {
 	align-items: center;
@@ -80,4 +84,8 @@ header#navigation div.p-navigation__banner div.p-navigation__logo a.p-navigation
 
 .is--disabled {
 	box-shadow: None;
+}
+
+.hidden {
+	display: none;
 }
