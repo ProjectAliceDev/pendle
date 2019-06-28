@@ -1,0 +1,11 @@
+{
+    "stable": {
+        "flag": "notready",
+        "version": "1.0.0"
+    },
+    "insider": {
+        "flag": "ready",
+        "version": "1.0.0",
+        "build": "2"
+    }
+}

@@ -1,0 +1,57 @@
+---
+layout: full_page
+title: Page Not Found
+permalink: /404.html
+---
+<style>
+    #rsod {
+        height: 100vh;
+        padding-top: 30vh;
+        background-color: #c6262e;
+        background: url("{{ site.baseurl }}/assets/img/rsod_overlay.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
+
+    .rsod_emoticon {
+        font-size: 128px;
+        color: #ff8c82;
+        font-weight: normal;
+    }
+
+    .rsod_title {
+        color: white;
+        font-weight: normal;
+    }
+
+    .rsod_search {
+        color: #ff8c82;
+        font-weight: normal;
+    }
+
+    .rsod_error {
+        margin-top: 0;
+    }
+</style>
+<section class="p-strip" id="rsod">
+    <div class="row">
+        <div class="col-12">
+            <h1 class = "rsod_emoticon">:(</h1>
+            <p>
+                <h2 class = "rsod_title">AliceOS ran into an error it couldn't handle and needs to restart.</h2>
+            </p>
+            <p class = "p-heading--four rsod_search">
+                If you'd like to know more, you can search online later for this error:
+            </p>
+            <p class = "p-heading--four rsod_error">
+                PAGE_NOT_FOUND
+            </p>
+            <p>
+                <a class = "p-button" href="/">Go home, AliceOS, you're drunk!</a>
+            </p>
+    </div>
+</section>
+</html>
