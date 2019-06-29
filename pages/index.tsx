@@ -41,7 +41,7 @@ const IndexPage: NextPage = () => {
             noShadow={ true }
             strictPadding
             image={ dokiDokiForces }
-            link="https://www.reddit.com/r/DDLCMods/comments/84ai0y/doki_doki_forces_beta_5_pumped_up_kicks_edition/"
+            link="https://old.reddit.com/r/DDLCMods/comments/byzhd5/doki_forces_the_sound_test_roof_demoteaser_now/"
             />
         </div>
       </div>
