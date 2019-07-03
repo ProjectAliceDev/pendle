@@ -9,8 +9,9 @@ import { NextPage } from 'next';
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core'
 import { pageContentStyles, pageGridContainer, pageSectionStyles } from '../../utils/commonStyles'
-import frontpageHeroImage from '../../assets/preview/hero.jpg'
-import frontpageHeroDevice from '../../assets/preview/devices.jpg'
+import previewPageImage from '../../assets/preview/hero.jpg'
+import previewPageDevice from '../../assets/preview/devices.jpg'
+import previewPageDesign from '../../assets/preview/perms.png'
 
 
 const PreviewPage: NextPage = () => {
@@ -28,7 +29,7 @@ const PreviewPage: NextPage = () => {
       <PlatformNameComponent
         title="AliceOS"
         subtitle="Prospect Park"
-        backgroundImageLocation={ frontpageHeroImage }
+        backgroundImageLocation={ previewPageImage }
       />
       <div css={ pageContentStyles }>
         <div css={ pageSectionStyles(true) }>
@@ -36,16 +37,17 @@ const PreviewPage: NextPage = () => {
           <p>
             AliceOS Prospect Park brings amazing new features and improvements to the robust framework you already know and love. Features such as Desktop, Inventories, and Express Setup make the experience much better, and developers will absolutely love working with AliceOS Prospect Park.
           </p>
-          <img src={ frontpageHeroDevice }/>
+          <img src={ previewPageDevice }/>
         </div>
         <div css={ pageGridContainer }>
           <BasicCard
-            title="AliceOS Technical Preview"
-            cardDescription="More control, power, and a spring cleaning. Ready to download."
+            title="A redefined design that matters."
+            cardDescription="AliceOS Prospect Park has been redesigned from the ground up, focusing on clarity, simplicity, and elegants. Permission requests are now front and center, notifications take on a dark shade, and the new Inter typeface helps bring readability and clarity."
             color="#fafafa"
             noShadow={ true }
             strictPadding
-            link="https://github.com/ProjectAliceDev/aliceos/releases/tag/1.0.0beta2"
+            image={ previewPageDesign }
+            imageOnTop
             />
           <BasicCard
             title="Now showing: Doki Doki Forces"
