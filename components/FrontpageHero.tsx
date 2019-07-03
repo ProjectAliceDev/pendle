@@ -38,7 +38,7 @@ const frontpagePreviewButtonStyles = css({
 	borderStyle: 'solid',
 	borderRadius: 4,
 	paddingTop: 2,
-	paddingBottom: 2,
+	paddingBottom: 4,
 	textAlign: 'center',
 	fontSize: '0.9em',
 	textShadow: '0 0 8px #777',

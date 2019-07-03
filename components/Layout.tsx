@@ -15,7 +15,7 @@ const globalStyles = css({
     position: 'relative',
     margin: 0,
     padding: 0,
-    fontFamily: "Nunito, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"
+    fontFamily: "Inter, Nunito, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"
   }
 });
 
@@ -57,6 +57,7 @@ const Layout: React.FunctionComponent<Props> = ({
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width, shrink-to-fit=no" />
       <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800&display=swap" rel="stylesheet"/>
+      <link href="https://rsms.me/inter/inter.css" rel="stylesheet"/>
     </Head>
     <div css={ mainPageStyles }>
       <Navbar/>

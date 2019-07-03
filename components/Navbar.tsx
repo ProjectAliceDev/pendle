@@ -39,7 +39,7 @@ const navbarStyles = css({
 })
 
 const navbarLogoStyles = css({
-	height: 32,
+	height: 28,
 	width: "auto",
 	position: "relative",
 	top: 6,

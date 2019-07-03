@@ -12,6 +12,7 @@ import { pageContentStyles, pageGridContainer, pageSectionStyles } from '../../u
 import previewPageImage from '../../assets/preview/hero.jpg'
 import previewPageDevice from '../../assets/preview/devices.jpg'
 import previewPageDesign from '../../assets/preview/perms.png'
+import previewPageDesktop from '../../assets/preview/desktop.png'
 
 
 const PreviewPage: NextPage = () => {
@@ -50,12 +51,12 @@ const PreviewPage: NextPage = () => {
             imageOnTop
             />
           <BasicCard
-            title="Now showing: Doki Doki Forces"
-            cardDescription="Now embracing AliceOS as the staple framework"
+            title="Meet your new desktop."
+            cardDescription="AliceOS Prospect Park brings a brand-new Desktop core service to easily view and run any AliceOS apps. With a simple, sleek design, it's easy to get what you need done without hassle."
             color="#fafafa"
             noShadow={ true }
             strictPadding
-            link="https://old.reddit.com/r/DDLCMods/comments/byzhd5/doki_forces_the_sound_test_roof_demoteaser_now/"
+            image={ previewPageDesktop }
             />
         </div>
       </div>
