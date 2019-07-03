@@ -14,7 +14,7 @@ import frontpageHeroImage from '../../assets/preview/hero.jpg'
 import dokiDokiForces from '../../assets/custom/3.png'
 import techPreviewImage from '../../assets/custom/2.png'
 
-const IndexPage: NextPage = () => {
+const PreviewPage: NextPage = () => {
   return (
     <Layout title="Prospect Park (Coming soon)">
       <MiniNavbar
@@ -58,4 +58,4 @@ const IndexPage: NextPage = () => {
   )
 }
 
-export default IndexPage
+export default PreviewPage
