@@ -1,18 +1,17 @@
 import * as React from 'react'
 import Layout from '../../components/Layout'
-import FrontpageHero from '../../components/FrontpageHero'
+import PlatformNameComponent from '../../components/PlatformName'
 import BasicCard from '../../components/BasicCard'
 import MiniNavbar from '../../components/MiniNavbar'
 
 import { NextPage } from 'next';
 
-
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core'
-import { pageContentStyles, pageGridContainer } from '../../utils/commonStyles'
+import { pageContentStyles, pageGridContainer, pageSectionStyles } from '../../utils/commonStyles'
 import frontpageHeroImage from '../../assets/preview/hero.jpg'
-import dokiDokiForces from '../../assets/custom/3.png'
-import techPreviewImage from '../../assets/custom/2.png'
+import frontpageHeroDevice from '../../assets/preview/devices.jpg'
+
 
 const PreviewPage: NextPage = () => {
   return (
@@ -22,17 +21,23 @@ const PreviewPage: NextPage = () => {
         buttonText="Read the docs"
         buttonLink="https://nextdocs.aliceos.app"
         transparent
-      />
-      <FrontpageHero
-        title="AliceOS Prospect Park"
-        subtitle="The framework you love, now calling your name."
+        hideButton
+      >
+        <a disabled>Coming soon</a>
+      </MiniNavbar>
+      <PlatformNameComponent
+        title="AliceOS"
+        subtitle="Prospect Park"
         backgroundImageLocation={ frontpageHeroImage }
-        callToActionText="See the preview"
-        callToActionLink="/prospect-park-preview/"
-        showPreviewText
-        largeText
       />
       <div css={ pageContentStyles }>
+        <div css={ pageSectionStyles(true) }>
+          <h1>Now calling your name.</h1>
+          <p>
+            AliceOS Prospect Park brings amazing new features and improvements to the robust framework you already know and love. Features such as Desktop, Inventories, and Express Setup make the experience much better, and developers will absolutely love working with AliceOS Prospect Park.
+          </p>
+          <img src={ frontpageHeroDevice }/>
+        </div>
         <div css={ pageGridContainer }>
           <BasicCard
             title="AliceOS Technical Preview"
@@ -41,7 +46,6 @@ const PreviewPage: NextPage = () => {
             noShadow={ true }
             strictPadding
             link="https://github.com/ProjectAliceDev/aliceos/releases/tag/1.0.0beta2"
-            image={ techPreviewImage }
             />
           <BasicCard
             title="Now showing: Doki Doki Forces"
@@ -49,7 +53,6 @@ const PreviewPage: NextPage = () => {
             color="#fafafa"
             noShadow={ true }
             strictPadding
-            image={ dokiDokiForces }
             link="https://old.reddit.com/r/DDLCMods/comments/byzhd5/doki_forces_the_sound_test_roof_demoteaser_now/"
             />
         </div>

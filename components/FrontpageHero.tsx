@@ -78,7 +78,7 @@ export const FrontpageHero: React.FC<FrontpageHeroProps> = (props) => {
 				<div css={ frontpagePreviewButtonStyles }>
 					Coming soon
 				</div>: null }
-			<h1 css={ frontpageHeroTitleStyles }>{ props.title }</h1>
+			<h1 css={ frontpageHeroTitleStyles(props.largeText) }>{ props.title }</h1>
 			<p css={ frontpageHeroSubtitleStyles( props.largeText ) }>{ props.subtitle }</p>
 			{
 				props.dontShowCallToAction? null:

@@ -11,6 +11,7 @@ interface MiniNavbarProps {
 	children?: any;
 	icon?: string;
 	transparent?: boolean;
+	hideButton?: boolean;
 }
 
 const miniNavbarRootStyles = (transparent?: boolean) => css({
@@ -97,13 +98,16 @@ const MiniNavbar: FC<MiniNavbarProps> = (props) => {
 				</div>
 				<div id="pa-mininavbar-links" css={ miniNavbarLinkStyles }>
 					{ props.children }
-					<Link href={ props.buttonLink }>
-						<a style={ navbarButtonStyle }>
-							<div css= { miniNavbarButtonStyles }>
-								<p> { props.buttonText } </p>
-							</div>
-						</a>
-					</Link>
+					{
+						props.hideButton? null:
+						<Link href={ props.buttonLink }>
+							<a style={ navbarButtonStyle }>
+								<div css= { miniNavbarButtonStyles }>
+									<p> { props.buttonText } </p>
+								</div>
+							</a>
+						</Link>
+					}
 				</div>
 			</div>
 		</div>
