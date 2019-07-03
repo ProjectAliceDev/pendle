@@ -9,7 +9,7 @@ import { NextPage } from 'next';
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core'
 import { pageContentStyles, pageGridContainer } from '../utils/commonStyles'
-import frontpageHeroImage from '../assets/hero_bg.png'
+import frontpageHeroImage from '../assets/preview/hero.jpg'
 import dokiDokiForces from '../assets/custom/3.png'
 import techPreviewImage from '../assets/custom/2.png'
 
@@ -17,11 +17,13 @@ const IndexPage: NextPage = () => {
   return (
     <Layout title="Home">
       <FrontpageHero
-        title="Your visual novel. Now with superpowers."
-        subtitle="Ready to add extra functionality to your visual novels? Want to extend the capabilities of Ren'Py with things like notifications, windows, and applets? Try the open-source framework that gives you angelic powers over your Ren'Py project and start integrating AliceOS into your project today."
+        title="AliceOS Prospect Park"
+        subtitle="The framework you love, now calling your name."
         backgroundImageLocation={ frontpageHeroImage }
-        callToActionText="Learn more"
-        callToActionLink="/features/"
+        callToActionText="See the preview"
+        callToActionLink="/prospect-park-preview/"
+        showPreviewText
+        largeText
       />
       <div css={ pageContentStyles }>
         <div css={ pageGridContainer }>
