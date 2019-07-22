@@ -22,10 +22,9 @@ const PreviewPage: NextPage = () => {
     <Layout title="Prospect Park (Coming soon)">
       <MiniNavbar
         title="AliceOS Preview"
-        buttonText="Read the docs"
-        buttonLink="https://nextdocs.aliceos.app"
+        buttonText="Try the beta"
+        buttonLink="./download"
         transparent
-        hideButton
       >
         <a href="https://nextdocs.aliceos.app">View the docs</a>
         <a>Coming soon</a>
