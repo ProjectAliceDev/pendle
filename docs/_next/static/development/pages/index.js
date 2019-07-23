@@ -18,7 +18,7 @@ module.exports = "/_next/static/images/2-47408f6f39b7d25a2424871cc592ee73.png";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/3-d95eda7004917337ea483bd4ba4e2a61.png";
+module.exports = "/_next/static/images/3-4dbc5cf5fd669974efd9d2e2c5ed7636.png";
 
 /***/ }),
 
@@ -21611,8 +21611,8 @@ var IndexPage = function IndexPage() {
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(_components_BasicCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    title: "Now showing: Doki Doki Forces",
-    cardDescription: "Now embracing AliceOS as the staple framework",
+    title: "Doki Doki Forces. Now in Prospect Park",
+    cardDescription: "This DDLC mod has been updated with AliceOS Prospect Park*",
     color: "#fafafa",
     noShadow: true,
     strictPadding: true,
@@ -21623,7 +21623,20 @@ var IndexPage = function IndexPage() {
       lineNumber: 39
     },
     __self: this
-  }))));
+  }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])("div", {
+    css: _utils_commonStyles__WEBPACK_IMPORTED_MODULE_5__["pageContentStyles"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])("small", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: this
+  }, "*Doki Doki Forces is not an official Project Alice mod and is displayed here as a partnered mod.")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (IndexPage);
@@ -21720,7 +21733,7 @@ var pageSectionStyles = function pageSectionStyles(centered) {
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fmarquiskurt%2FDeveloper%2Fpendle%2Fpages%2Findex.tsx ***!
   \********************************************************************************************************************************/
@@ -21743,5 +21756,5 @@ module.exports = dll_afa7b25a60452594c240;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

@@ -37,8 +37,8 @@ const IndexPage: NextPage = () => {
             image={ techPreviewImage }
             />
           <BasicCard
-            title="Now showing: Doki Doki Forces"
-            cardDescription="Now embracing AliceOS as the staple framework"
+            title="Doki Doki Forces. Now in Prospect Park"
+            cardDescription="This DDLC mod has been updated with AliceOS Prospect Park*"
             color="#fafafa"
             noShadow={ true }
             strictPadding
@@ -46,6 +46,9 @@ const IndexPage: NextPage = () => {
             link="https://old.reddit.com/r/DDLCMods/comments/byzhd5/doki_forces_the_sound_test_roof_demoteaser_now/"
             />
         </div>
+      </div>
+      <div css={ pageContentStyles }>
+        <small>*Doki Doki Forces is not an official Project Alice mod and is displayed here as a partnered mod.</small>
       </div>
     </Layout>
   )
