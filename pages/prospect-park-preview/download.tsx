@@ -54,7 +54,7 @@ const PreviewPage: NextPage = () => {
       		<p>Getting started with AliceOS Prospect Park couldn't be easier. Just download the version for your Ren'Py SDK and drag it into your visual novel project's game folder.</p>
       		<div css = { previewWarningStyles }>
       			<p><b>Note:</b> AliceOS Prospect Park is pre-release software. Features and improvements are not in their complete state and may change over time. <b>Do not install AliceOS Prospect Park on a production-ready visual novel project.</b></p>
-      			<p>More information on what's changed can be found in <a href="https://nextdocs.aliceos.app/02-changelog/">AliceOS's release notes.</a></p>
+      			<p>More information on what's changed can be found in <a href="https://nextdocs.aliceos.app/AliceOS-Release-Notes/">AliceOS's release notes.</a></p>
       		</div>
       		<h2>Finished downloading?</h2>
       	</div>
@@ -64,7 +64,7 @@ const PreviewPage: NextPage = () => {
 	            cardDescription="Read the release notes on the latest developer beta release and get to know AliceOS a bit."
 	            color="#ffe693"
 	            strictPadding
-	            link="https://nextdocs.aliceos.app/02-changelog/"
+	            link="https://nextdocs.aliceos.app/AliceOS-Release-Notes/"
 	            image={ whatsNextDocs }
 	            />
           <BasicCard

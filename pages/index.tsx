@@ -28,7 +28,7 @@ const IndexPage: NextPage = () => {
       <div css={ pageContentStyles }>
         <div css={ pageGridContainer }>
           <BasicCard
-            title="AliceOS Technical Preview"
+            title="Download AliceOS Classic (1.0.0 Tehnical Preview)"
             cardDescription="More control, power, and a spring cleaning. Ready to download."
             color="#fafafa"
             noShadow={ true }
