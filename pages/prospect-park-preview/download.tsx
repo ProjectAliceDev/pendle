@@ -56,26 +56,35 @@ const PreviewPage: NextPage = () => {
       			<p><b>Note:</b> AliceOS Prospect Park is pre-release software. Features and improvements are not in their complete state and may change over time. <b>Do not install AliceOS Prospect Park on a production-ready visual novel project.</b></p>
       			<p>More information on what's changed can be found in <a href="https://nextdocs.aliceos.app/AliceOS-Release-Notes/">AliceOS's release notes.</a></p>
       		</div>
-      		<h2>Finished downloading?</h2>
       	</div>
-      	<div css={ pageGridContainer }>
-  			<BasicCard
-	            title="Learn about what's new."
-	            cardDescription="Read the release notes on the latest developer beta release and get to know AliceOS a bit."
-	            color="#ffe693"
-	            strictPadding
-	            link="https://nextdocs.aliceos.app/AliceOS-Release-Notes/"
-	            image={ whatsNextDocs }
-	            />
-          <BasicCard
-            title="Start writing apps for AliceOS."
-            cardDescription="Learn more about the new app system and how you can start writing your own third-party apps for the AliceOS platform."
-            color="#ffe693"
-            strictPadding
-            link="https://nextdocs.aliceos.app/AppKit/"
-            image={ whatsNextApps }
-            />
-      	</div>
+        <div css={ pageSectionStyles(false) }>
+          <h2>Migrating from AliceOS 1.0.0?</h2>
+          <p>Remove the Applets, CoreServices, Frameworks, and Resources directories before installing AliceOS Prospect Park Beta. You may also need to modify any existing code inside your project to the proper methods and classes in the new beta before continuing.</p>
+          <div css = { previewWarningStyles }>
+            <p><b>Note:</b> Back up your project before starting the upgrade process to AliceOS Prospect Park. The installation and usage methods have greatly changed and may not work for you if the upgrade fails.</p>
+          </div>
+        </div>
+        <div css = { pageSectionStyles(true) }>
+          <h1>Finished downloading AliceOS?</h1>
+        	<div css={ pageGridContainer }>
+    			<BasicCard
+  	            title="Learn about what's new."
+  	            cardDescription="Read the release notes on the latest developer beta release and get to know AliceOS a bit."
+  	            color="#ffe693"
+  	            strictPadding
+  	            link="https://nextdocs.aliceos.app/AliceOS-Release-Notes/"
+  	            image={ whatsNextDocs }
+  	            />
+            <BasicCard
+              title="Start writing apps for AliceOS."
+              cardDescription="Learn more about the new app system and how you can start writing your own third-party apps for the AliceOS platform."
+              color="#ffe693"
+              strictPadding
+              link="https://nextdocs.aliceos.app/AppKit/"
+              image={ whatsNextApps }
+              />
+        	</div>
+        </div>
       </div>
     </Layout>
   )

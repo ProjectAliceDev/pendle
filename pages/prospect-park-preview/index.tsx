@@ -27,7 +27,6 @@ const PreviewPage: NextPage = () => {
         transparent
       >
         <a href="https://nextdocs.aliceos.app">View the docs</a>
-        <a>Coming soon</a>
       </MiniNavbar>
       <PlatformNameComponent
         title="AliceOS 2.0.0"
