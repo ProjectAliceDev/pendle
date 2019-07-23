@@ -14,6 +14,8 @@ interface FrontpageHeroProps {
     callToActionLink: string
     backgroundImageLocation?: string
     dontShowCallToAction?: boolean
+    showPreviewText?: boolean
+    largeText?: boolean
 }
 
 const frontpageHeroRootStyles = css(breakpoints({
@@ -29,14 +31,32 @@ const frontpageHeroRootStyles = css(breakpoints({
 	backgroundRepeat: "no-repeat"
 }))
 
-const frontpageHeroTitleStyles = css({
-	fontSize: '2.5em',
+const frontpagePreviewButtonStyles = css({
+	color: "#ffcc22",
+	borderColor: "#ffcc22",
+	borderWidth: 0.25,
+	borderStyle: 'solid',
+	borderRadius: 4,
+	paddingTop: 2,
+	paddingBottom: 4,
+	textAlign: 'center',
+	fontSize: '0.9em',
+	textShadow: '0 0 8px #777',
+	boxShadow: '0 0 2px #999',
+	width: 'auto',
+	maxWidth: 116,
+	marginLeft: 'auto',
+	marginRight: 'auto',
+})
+
+const frontpageHeroTitleStyles = (largeTitle?: boolean) => css({
+	fontSize: largeTitle? '3em': '2.5em',
 	textShadow: '0 0 8px #333',
 	lineHeight: '1.0em',
 })
 
-const frontpageHeroSubtitleStyles = css({
-	fontSize: '1.25em',
+const frontpageHeroSubtitleStyles = (largeSubtitle?: boolean) => css({
+	fontSize: largeSubtitle? '1.75em': '1.25em',
 	textShadow: '0 0 6px #333'
 })
 
@@ -45,14 +65,21 @@ const frontpageCallToActionStyles = css({
   	color: "rgb(255, 204, 0)",
 	'&:hover': {
 	  color: "#ffdb64",
-	}
+	},
+	textShadow: '0 0 8px #333',
+	fontWeight: 600
+
 })
 
 export const FrontpageHero: React.FC<FrontpageHeroProps> = (props) => {
 	return (
 		<div css={ frontpageHeroRootStyles } style={ { backgroundImage: `url(${ props.backgroundImageLocation })`} }>
-			<h1 css={ frontpageHeroTitleStyles }>{ props.title }</h1>
-			<p css={ frontpageHeroSubtitleStyles }>{ props.subtitle }</p>
+			{ props.showPreviewText? 
+				<div css={ frontpagePreviewButtonStyles }>
+					Coming soon
+				</div>: null }
+			<h1 css={ frontpageHeroTitleStyles(props.largeText) }>{ props.title }</h1>
+			<p css={ frontpageHeroSubtitleStyles( props.largeText ) }>{ props.subtitle }</p>
 			{
 				props.dontShowCallToAction? null:
 				<Link href={ props.callToActionLink }>

@@ -10,11 +10,13 @@ interface MiniNavbarProps {
 	buttonLink: string;
 	children?: any;
 	icon?: string;
+	transparent?: boolean;
+	hideButton?: boolean;
 }
 
-const miniNavbarRootStyles = css({
+const miniNavbarRootStyles = (transparent?: boolean) => css({
 	height: 48,
-	backgroundColor: "rgba(255, 255, 255, 0.8)",
+	backgroundColor: transparent? "rgba(255, 255, 255, 0.1)": "rgba(255, 255, 255, 0.8)",
 	position: "absolute",
 	top: 0,
 	display: "flex",
@@ -88,7 +90,7 @@ const navbarButtonStyle = { textDecoration: "none", fontSize: '0.95em', marginTo
 
 const MiniNavbar: FC<MiniNavbarProps> = (props) => {
 	return (
-		<div id="pa-mininavbar" css={ miniNavbarRootStyles }>
+		<div id="pa-mininavbar" css={ miniNavbarRootStyles(props.transparent) }>
 			<div css={ miniNavbarInnerRegionStyles }>
 				<div style = { { flexGrow: 1, display: "flex" } }>
 					{ props.icon? <img src={ props.icon } css={ miniNavbarLogoStyles }/>: null }
@@ -96,13 +98,16 @@ const MiniNavbar: FC<MiniNavbarProps> = (props) => {
 				</div>
 				<div id="pa-mininavbar-links" css={ miniNavbarLinkStyles }>
 					{ props.children }
-					<Link href={ props.buttonLink }>
-						<a style={ navbarButtonStyle }>
-							<div css= { miniNavbarButtonStyles }>
-								<p> { props.buttonText } </p>
-							</div>
-						</a>
-					</Link>
+					{
+						props.hideButton? null:
+						<Link href={ props.buttonLink }>
+							<a style={ navbarButtonStyle }>
+								<div css= { miniNavbarButtonStyles }>
+									<p> { props.buttonText } </p>
+								</div>
+							</a>
+						</Link>
+					}
 				</div>
 			</div>
 		</div>

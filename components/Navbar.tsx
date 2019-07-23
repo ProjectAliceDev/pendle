@@ -39,7 +39,7 @@ const navbarStyles = css({
 })
 
 const navbarLogoStyles = css({
-	height: 32,
+	height: 28,
 	width: "auto",
 	position: "relative",
 	top: 6,
@@ -184,6 +184,9 @@ class Navbar extends Component<any, NavbarState> {
 							</Link>
 						</div>
 						<div id = "pa-navbar-links" css={ navbarLinksStyles }>
+							<Link href="/prospect-park-preview/">
+								<a>Prospect Park (Preview)</a>
+							</Link>
 							<Link href="/features/">
 								<a>Features</a>
 							</Link>
@@ -212,6 +215,9 @@ class Navbar extends Component<any, NavbarState> {
 					mobileMenuOpen ?
 					<div id = "pa-navbar-mobile-menu" css={ mobileMenuRootStyles }>
 						<div id = "pa-navbar-mobile-menu-links" css={ mobileMenuLinksStyles }>
+							<Link href="/prospect-park-preview/">
+								<a>Prospect Park (Preview)</a>
+							</Link>
 							<Link href="/features/">
 								<a>Features</a>
 							</Link>

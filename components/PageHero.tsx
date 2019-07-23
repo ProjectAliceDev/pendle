@@ -12,6 +12,7 @@ interface PageHeroProps {
 	showLink?: boolean
 	linkText?: string
 	linkPointsTo?: string
+	noBlur?: boolean
 }
 
 const breakpoints = facepaint([
@@ -28,7 +29,7 @@ const pageHeroRootStyles = css({
 	zIndex: 1,
 })
 
-const pageHeroBackgroundStyles = css({
+const pageHeroBackgroundStyles = (blur: boolean) => css({
 	height: "inherit",
 	position: 'absolute',
 	top: 0,
@@ -37,7 +38,7 @@ const pageHeroBackgroundStyles = css({
 	backgroundRepeat: "no-repeat",
 	backgroundSize: "cover",
 	zIndex: -1,
-	filter: "blur(24px)",
+	filter: !blur? "blur(24px)": "none",
 	overflow: "hidden"
 })
 
@@ -97,7 +98,7 @@ const pageHeroButtonBase = {
 const PageHero: FC<PageHeroProps> = (props) => {
 	return(
 		<div id="pa-pagehero" css={ pageHeroRootStyles }>
-			<div css={ pageHeroBackgroundStyles } style={ {backgroundImage: `url(${ props.backgroundImage })`} }></div>
+			<div css={ pageHeroBackgroundStyles(props.noBlur) } style={ {backgroundImage: `url(${ props.backgroundImage })`} }></div>
 			<div css={ pageHeroContentStyles }>
 				<div css={ pageHeroTextStyles }>
 					<h1 css={ pageHeroTitleStyles }> { props.title } </h1>

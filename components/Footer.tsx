@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
 		<div id = "pa-footer" css={ footerRootStyles }>
 			<p><b>&copy; 2018 - {new Date().getFullYear()} Project Alice.</b></p>
 			<p>
-				AliceOS, The Angel Returns, and Forgotten is not associated with Team Salvato or Joey Drew Studios and is not an official Bendy and the Ink Machine product.
+				AliceOS is not associated with Team Salvato or Joey Drew Studios and is not an official Bendy and the Ink Machine product.
 			</p>
 		</div>
 	)

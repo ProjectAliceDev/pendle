@@ -38,3 +38,12 @@ export const thinnerPageGridContainer = css(breakpoints({
   height: "100%",
   paddingBottom: 64,
 }));
+
+export const pageSectionStyles = (centered: boolean) => css(breakpoints({
+  paddingTop: 32,
+  paddingBottom: 48,
+  textAlign: centered? 'center': 'left',
+  '& img': {
+    width: ["100%", "100%", "75%"],
+  }
+}))
