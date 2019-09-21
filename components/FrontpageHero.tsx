@@ -44,7 +44,7 @@ const frontpagePreviewButtonStyles = css({
 	textShadow: '0 0 8px #777',
 	boxShadow: '0 0 2px #999',
 	width: 'auto',
-	maxWidth: 116,
+	maxWidth: 156,
 	marginLeft: 'auto',
 	marginRight: 'auto',
 })
@@ -76,7 +76,7 @@ export const FrontpageHero: React.FC<FrontpageHeroProps> = (props) => {
 		<div css={ frontpageHeroRootStyles } style={ { backgroundImage: `url(${ props.backgroundImageLocation })`} }>
 			{ props.showPreviewText? 
 				<div css={ frontpagePreviewButtonStyles }>
-					Coming soon
+					Coming in October
 				</div>: null }
 			<h1 css={ frontpageHeroTitleStyles(props.largeText) }>{ props.title }</h1>
 			<p css={ frontpageHeroSubtitleStyles( props.largeText ) }>{ props.subtitle }</p>

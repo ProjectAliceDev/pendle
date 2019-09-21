@@ -13,6 +13,8 @@ import previewPageImage from '../../assets/preview/hero.jpg'
 import previewPageDevice from '../../assets/preview/devices.jpg'
 import previewPageDesign from '../../assets/preview/perms.png'
 import previewPageDesktop from '../../assets/preview/desktop.png'
+import previewPageInventories from '../../assets/preview/inventories.png'
+import previewPageScreenkit from '../../assets/preview/screenkit.png'
 import previewPageSetup from '../../assets/preview/setup-assistant.png'
 import previewPageUpdate from '../../assets/preview/update.png'
 
@@ -52,7 +54,7 @@ const PreviewPage: NextPage = () => {
             imageOnTop
             />
           <BasicCard
-            title="Meet your new desktop."
+            title="An entirely new desktop with new apps."
             cardDescription="AliceOS Prospect Park brings a brand-new Desktop core service to easily view and run any AliceOS apps. With a simple, sleek design, it's easy to get what you need done without hassle. And with the new app system for AliceOS, developing apps that work with the Desktop couldn't be simpler."
             color="#fafafa"
             noShadow={ true }
@@ -60,12 +62,12 @@ const PreviewPage: NextPage = () => {
             image={ previewPageDesktop }
             />
           <BasicCard
-            title="Set up your game. Faster."
-            cardDescription="The brand-new Setup Assistant is ready for action. With the new Express Mode, Setup is just as easy as reading your game's agreement and making a player name. And, with the new bootloader, Setup will run automatically for you on first boot."
+            title="An inventory both developers and players will love."
+            cardDescription="AliceOS Prospect Park brings a new app called Inventories that makes it easy, fun, and fast to add an inventory system to any game. Developers will love how easy it is to get started with an inventory, and players will get to access their items in a fun way through both the HUD and app."
             color="#fafafa"
             noShadow={ true }
             strictPadding
-            image={ previewPageSetup }
+            image={ previewPageInventories }
             />
           <BasicCard
             title="Super easy to install. And even easier to update."
@@ -76,6 +78,23 @@ const PreviewPage: NextPage = () => {
             image={ previewPageUpdate }
             imageOnTop
             />
+        <BasicCard
+            title="A brand new setup assistant. Now ready for express checkout."
+            cardDescription="The brand-new Setup Assistant is ready for action. Built around modularity, it's easy to add new steps to the assistant. The Setup Assistant also deeply integrates with the bootloader, meaning less code to call. And, with the new Express Mode, players will get to their game faster with just typing their player name."
+            color="#fafafa"
+            noShadow={ true }
+            strictPadding
+            image={ previewPageSetup }
+            imageOnTop
+        />
+        <BasicCard
+            title="Interfaces that are easy to use. And implement."
+            cardDescription="AliceOS Prospect Park brings the brand-new ScreenKit framework, an easy way for developers to create beautiful user interfaces that work with AliceOS. Built on top of Ren'Py's screen language, it couldn't be faster to make great UIs. And, for players, it couldn't be better using them."
+            color="#fafafa"
+            noShadow={ true }
+            strictPadding
+            image={ previewPageScreenkit }
+        />
         </div>
       </div>
     </Layout>

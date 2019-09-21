@@ -21315,7 +21315,7 @@ var breakpoints = Object(facepaint__WEBPACK_IMPORTED_MODULE_0__["default"])(['@m
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!***************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F_error&absolutePagePath=%2FUsers%2Fmarquiskurt%2FDeveloper%2Fpendle%2Fpages%2F_error.tsx ***!
   \***************************************************************************************************************************************/
@@ -21338,5 +21338,5 @@ module.exports = dll_afa7b25a60452594c240;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=_error.js.map

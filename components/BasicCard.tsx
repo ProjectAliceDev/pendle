@@ -55,7 +55,7 @@ const basicCardImageContainerStyles = (strictPadding: boolean | undefined) => {
 const basicCardImageStyles = css({
 	width: "100%",
 	height: "auto",
-	maxHeight: 250,
+	maxHeight: 500,
 	marginBottom: 8,
 	alignSelf: "center",
 	borderRadius: 4,
