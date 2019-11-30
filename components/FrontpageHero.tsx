@@ -76,7 +76,7 @@ export const FrontpageHero: React.FC<FrontpageHeroProps> = (props) => {
 		<div css={ frontpageHeroRootStyles } style={ { backgroundImage: `url(${ props.backgroundImageLocation })`} }>
 			{ props.showPreviewText? 
 				<div css={ frontpagePreviewButtonStyles }>
-					Coming in October
+					Coming in December*
 				</div>: null }
 			<h1 css={ frontpageHeroTitleStyles(props.largeText) }>{ props.title }</h1>
 			<p css={ frontpageHeroSubtitleStyles( props.largeText ) }>{ props.subtitle }</p>
