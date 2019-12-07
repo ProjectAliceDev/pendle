@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "export": "next export -o docs; touch docs/.nojekyll; echo \"aliceos.app\" >> docs/CNAME" ,
+    "export": "next export -o docs; touch docs/.nojekyll; echo \"aliceos.app\" >> docs/CNAME",
     "start": "next start",
     "type-check": "tsc"
   },
