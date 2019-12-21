@@ -184,8 +184,8 @@ class Navbar extends Component<any, NavbarState> {
 							</Link>
 						</div>
 						<div id = "pa-navbar-links" css={ navbarLinksStyles }>
-							<Link href="/prospect-park-preview/">
-								<a>Prospect Park (Preview)</a>
+							<Link href="/prospect-park/">
+								<a>Prospect Park</a>
 							</Link>
 							<Link href="/features/">
 								<a>Features</a>

@@ -9,9 +9,9 @@ import { NextPage } from 'next';
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core'
 import { pageContentStyles, pageGridContainer } from '../utils/commonStyles'
-import frontpageHeroImage from '../assets/preview/hero.jpg'
+import frontpageHeroImage from '../assets/hero/hero.jpg'
+import devicesImage from '../assets/devices.jpg'
 import dokiDokiForces from '../assets/custom/3.png'
-import techPreviewImage from '../assets/custom/2.png'
 
 const IndexPage: NextPage = () => {
   return (
@@ -20,22 +20,12 @@ const IndexPage: NextPage = () => {
         title="AliceOS Prospect Park"
         subtitle="The framework you love, now calling your name."
         backgroundImageLocation={ frontpageHeroImage }
-        callToActionText="See the preview"
-        callToActionLink="/prospect-park-preview/"
-        showPreviewText
+        callToActionText="Upgrade now"
+        callToActionLink="/prospect-park/"
         largeText
       />
       <div css={ pageContentStyles }>
         <div css={ pageGridContainer }>
-          <BasicCard
-            title="Download AliceOS Classic (1.0.0 Tehnical Preview)"
-            cardDescription="More control, power, and a spring cleaning. Ready to download."
-            color="#fafafa"
-            noShadow={ true }
-            strictPadding
-            link="https://github.com/ProjectAliceDev/aliceos/releases/tag/1.0.0beta2"
-            image={ techPreviewImage }
-            />
           <BasicCard
             title="Doki Doki Forces. Now in Prospect Park"
             cardDescription="This DDLC mod has been updated with AliceOS Prospect Park*"
@@ -44,6 +34,15 @@ const IndexPage: NextPage = () => {
             strictPadding
             image={ dokiDokiForces }
             link="https://old.reddit.com/r/DDLCMods/comments/byzhd5/doki_forces_the_sound_test_roof_demoteaser_now/"
+            />
+          <BasicCard
+            title="Prospect Park has landed."
+            cardDescription="Get AliceOS Prospect Park today and start building great visual novel experiences."
+            color="#fafafa"
+            noShadow={ true }
+            strictPadding
+            image={ devicesImage }
+            link="./download"
             />
         </div>
       </div>

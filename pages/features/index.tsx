@@ -9,45 +9,45 @@ import { css, jsx } from '@emotion/core'
 import { breakpoints } from '../../utils/breakpoints'
 import { pageContentStyles, pageGridContainer } from '../../utils/commonStyles'
 
-import featuresHeroImage from '../../assets/sysbg.png'
-import appletsFeature from '../../assets/applets.jpg'
-import notifsFeature from '../../assets/aliceos-notify.png'
-import privacyFeature from '../../assets/aliceos-privacy.png'
+import featuresHeroImage from '../../assets/hero/pr.jpg'
+import installFeature from '../../assets/features/update.png'
+import appFeature from '../../assets/features/desktop.png'
+import privacyFeature from '../../assets/features/perms.png'
 import customFeature from '../../assets/custom/3.png'
 
 
 const AboutPage: React.FunctionComponent = () => (
   <Layout title="Features">
     <PageHero
-    	title="AliceOS Features"
+    	title="About AliceOS"
     	subtitle="Meet your new Ren'Py framework."
     	showLink
     	linkText = "Get Started"
-    	linkPointsTo = "https://docs.aliceos.app/master/index.html"
+    	linkPointsTo = "https://docs.aliceos.app"
       backgroundImage= { featuresHeroImage }
 	/>
 	<div css={ pageContentStyles }>
 		<div css={ pageGridContainer }>
        <BasicCard
-            title="Pick an applet. Any applet."
-            cardDescription="AliceOS is extensible by nature with Applets, custom extensions and apps for the AliceOS ecosystem. Whether you're playing music, sending messages to your crush, or writing the next script, Applets make it happen."
+            title="Fast install, faster upgrades."
+            cardDescription="AliceOS is easy to install with just adding a single file to your existing Ren'Py visual novel project. And with each new release, all you have to do is just replace that file. AliceOS also builds with the latest Ren'Py SDKs and special editions for projects like mods for Doki Doki Literature Club."
             color="#fafafa"
             noShadow={ true }
             strictPadding
             imageOnTop
-            image={ appletsFeature }
+            image={ installFeature }
             />
           <BasicCard
-            title="Rich notifications. So rich you won't miss a beat."
-            cardDescription="AliceOS comes with its own notification framework that allows developers and users to stay informed. Applets and system services alike use notifications to express ideas, display information, or even make a request. Notifications are also user-controlled, giving the user ultimate control over which notifications can be seen."
+            title="Super extensible with apps."
+            cardDescription="AliceOS adds great new tools and utilities to let you take advantage of what AliceOS has to offer. AliceOS comes bundled with applications like App Manager and inventories, and developers can make use of AppKit and ScreenKit to create custom apps for AliceOS with ease."
             color="#fafafa"
             noShadow={ true }
             strictPadding
-            image={ notifsFeature }
+            image={ appFeature }
             />
           <BasicCard
             title="You're in control. Always."
-            cardDescription="Privacy and security matter. That's why AliceOS comes with its own security policy, SEAlice. Applets can only access your files and system when you allow it to, and developers can add additional privacy and security settings for a more secure experience."
+            cardDescription="Privacy and security matter. That's why we bake it directly into AliceOS with AppKit. Apps only have access to the things you want them to with your permission. For developers, it's just as easy to ask and work with permissions."
             color="#fafafa"
             noShadow={ true }
             strictPadding
@@ -55,8 +55,8 @@ const AboutPage: React.FunctionComponent = () => (
             image={ privacyFeature }
             />
           <BasicCard
-            title="All the same. But yet so different."
-            cardDescription="AliceOS provides a familiar experience across projects and games. Want something a little less vanilla? Developers can customize AliceOS through fonts and colors or redesign UI elements entirely!"
+            title="Super customizable. Down to the source."
+            cardDescription="AliceOS offers easy modularity with frameworks that can be added, modified, or removed in the AliceOS package. And since AliceOS is open-source under the BSD-2-Clause license, anyone can create custom AliceOS packages easily."
             color="#fafafa"
             strictPadding
             noShadow={ true }
