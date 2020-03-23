@@ -23,7 +23,8 @@ const previewWarningStyles = css({
 	paddingLeft: 24,
 	paddingRight: 24,
 	paddingTop: 16,
-	paddingBottom: 16,
+  paddingBottom: 16,
+
 })
 
 const PreviewPage: NextPage = () => {

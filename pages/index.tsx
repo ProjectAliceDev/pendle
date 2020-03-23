@@ -1,10 +1,9 @@
-import * as React from 'react'
-import Layout from '../components/Layout'
-import FrontpageHero from '../components/FrontpageHero'
-import BasicCard from '../components/BasicCard'
+import * as React from 'react';
+import Layout from '../components/Layout';
+import FrontpageHero from '../components/FrontpageHero';
+import BasicCard from '../components/BasicCard';
 
 import { NextPage } from 'next';
-
 
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core'
@@ -13,9 +12,32 @@ import frontpageHeroImage from '../assets/hero/hero.jpg'
 import devicesImage from '../assets/devices.jpg'
 import dokiDokiForces from '../assets/custom/3.png'
 
+const bannerStyles = css({
+	backgroundColor: "#d5f3fe",
+	borderColor: "#2565ae",
+	borderWidth: 0.25,
+	borderStyle: "solid",
+	paddingLeft: 24,
+	paddingRight: 24,
+	paddingTop: 8,
+  paddingBottom: 8,
+  textAlign: "center",
+  '& a': {
+    textDecoration: "none",
+    color: "#2565ae"
+  },
+  '& a:hover': {
+    color: "#3c99dc"
+  }
+})
+
 const IndexPage: NextPage = () => {
   return (
     <Layout title="Home">
+      <div css={bannerStyles}>
+        <p><b>We're planning AliceOS v3.0.0.</b></p>
+        <p>What would you like to see in the next AliceOS release? <a href="https://youtrack.marquiskurt.net/youtrack/issue/AOS-1">Let us know &rsaquo;</a></p>
+      </div>
       <FrontpageHero
         title="AliceOS Prospect Park"
         subtitle="The framework you love, now calling your name."

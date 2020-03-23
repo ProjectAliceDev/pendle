@@ -9,9 +9,9 @@ import { breakpoints } from '../utils/breakpoints'
 
 
 import logomark from '../assets/logomark.svg';
-import { 
-	mdiGithubCircle, 
-	mdiMenu 
+import {
+	mdiGithubCircle,
+	mdiMenu
 } from '@mdi/js';
 
 interface NavbarState {
@@ -28,13 +28,15 @@ const navbarRootStyles = css({
 	marginRight: "auto",
 	paddingLeft: 48,
 	paddingRight: 48,
-	color: "white"
+	color: "white",
+	zIndex: 100,
+	position: "relative"
 })
 
 const navbarStyles = css({
-	maxWidth: 1000, 
-	display: 'flex', 
-	marginLeft: "auto", 
+	maxWidth: 1000,
+	display: 'flex',
+	marginLeft: "auto",
 	marginRight: "auto"
 })
 
@@ -109,7 +111,7 @@ const mobileMenuBarButton = css(breakpoints({
 
 const mobileMenuSpacer = css(breakpoints({
 	display: ["flex", "flex", "none"],
-	flexGrow: 1	
+	flexGrow: 1
 }))
 
 const mobileMenuRootStyles = css(breakpoints({
