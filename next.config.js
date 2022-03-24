@@ -1,10 +1,12 @@
-const typescript = require('@zeit/next-typescript');
 const images = require('next-images');
 const withCompose = require('next-compose-plugins');
-const withCSS = require('@zeit/next-css');
 
-module.exports = withCompose([ 
-	typescript,
-	images,
-	withCSS
-]);
+const plugins = [images];
+
+const nextConfig = {
+	cssModules: true,
+    reactStrictMode: false,
+	// webpack5: false,
+};
+
+module.exports = withCompose(plugins, nextConfig);
